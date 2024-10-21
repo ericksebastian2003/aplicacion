@@ -1,3 +1,68 @@
+<style>
+/* Estilo para el display */
+.display {
+  background-color: #1e1e1e; /* Fondo oscuro para contraste */
+  color: #00ff7f; /* Verde brillante para un look digital */
+  font-size: 3em; /* Tamaño grande para mejor visibilidad */
+  text-align: right; /* Alinear a la derecha como una calculadora real */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilo general para los botones */
+ion-button {
+  --border-radius: 12px; /* Bordes más redondeados */
+  --background: #303030; /* Fondo oscuro para el botón */
+  --color: #ffffff; /* Texto blanco */
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en los botones */
+  font-size: 1.5em; /* Tamaño de fuente más grande */
+  padding: 20px; /* Aumentar padding para mejor interacción táctil */
+  margin: 8px; /* Separación entre botones */
+  transition: background-color 0.2s ease-in-out; /* Transición suave al hacer hover */
+}
+
+/* Botones numéricos específicos */
+ion-button.numeric {
+  --background: #4a4a4a; /* Color específico para los números */
+}
+
+/* Botones de operadores (color distintivo) */
+ion-button.operator {
+  --background: #ff8c00; /* Naranja para operadores */
+  --color: white;
+}
+
+/* Botón de igual */
+ion-button.equal {
+  --background: #00bfff; /* Azul para el botón de igual */
+  --color: white;
+}
+
+/* Botón de limpiar (C) */
+ion-button.clear {
+  --background: #940a26; /* Rojo para el botón de limpiar */
+  --color: white;
+}
+
+/* Efecto hover */
+ion-button:hover {
+  --background: #00ff7f; /* Cambia a verde brillante en hover */
+}
+
+/* Asegurar que la calculadora sea responsiva */
+ion-grid {
+  max-width: 400px; /* Limitar el ancho máximo */
+  margin: 0 auto; /* Centrar la calculadora */
+}
+
+ion-content {
+  --background: #050e63; /* Fondo gris claro para la página */
+}
+
+
+</style>
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
@@ -54,4 +119,4 @@
     </ion-row>
   </ion-grid>
 </ion-content>
-</ion-content>
+
